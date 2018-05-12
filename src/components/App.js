@@ -9,6 +9,9 @@ import {
   Route,
   Switch
 } from 'react-router-dom';
+import Cuisine from './Cuisine';
+import Location from './Location';
+import Feeling from './Feeling';
 
 
 class App extends Component {
@@ -17,14 +20,13 @@ class App extends Component {
       <Router>
           <div className='container'>
             <Nav />
-
+            <Cuisine />
+            <Location />
+            <Feeling />
             <Switch>
               <Route exact path='/' component={Home} />
-              <Route exact path='/helper' component={Helper} />
+              <Route path='/helper' component={Helper} />
               <Route path='/trending' component={Trending} />
-              <Route render={function () {
-                return <p>Not Found</p>
-              }} />
             </Switch>
           </div>
         </Router>

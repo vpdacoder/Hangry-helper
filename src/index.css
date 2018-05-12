@@ -30,3 +30,21 @@ li {
 .active {
   font-weight: bold;
 }
+
+.popular-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.thumbnail {
+  height: 100px;
+  width: 100px;
+  border-radius: 100px;
+  cursor: pointer;
+}
+
+.item {
+  font-weight: bold;
+  margin: 10px;
+}
